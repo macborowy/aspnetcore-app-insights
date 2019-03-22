@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace WebAppInsigths.Web
 {
@@ -9,6 +10,10 @@ namespace WebAppInsigths.Web
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddLogging(builder =>
+            {
+                builder.AddAzureWebAppDiagnostics();
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
