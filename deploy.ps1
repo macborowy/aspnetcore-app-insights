@@ -1,5 +1,5 @@
 $armTemplate = "azuredeploy.json"
-$resourceGroup = "web_app_insights"
+$resourceGroup = "test_insights"
 $webProjectPath = "src\WebAppInsigths.Web"
 $publishFolder = Join-Path -Path $PSScriptRoot -ChildPath "$webProjectPath/publish/artifacts"
 $destination = Join-Path -Path $PSScriptRoot -ChildPath "$webProjectPath/publish/artifacts.zip"
