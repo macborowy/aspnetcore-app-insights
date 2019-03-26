@@ -9,7 +9,7 @@ $stopwatch =  [system.diagnostics.stopwatch]::StartNew()
 
 # deploy ARM template
 
-$webAppName = az group deployment create -g $resourceGroup --template-file $armTemplate --query "properties.outputs.webAppName.value"
+$webAppName = az group deployment create -g $resourceGroup --template-file $armTemplate --verbose --query "properties.outputs.webAppName.value"
 
 $stopwatch
 

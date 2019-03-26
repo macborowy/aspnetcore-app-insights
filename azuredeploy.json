@@ -12,7 +12,7 @@
         },
         "appServicePlanSkuName": {
             "type": "string",
-            "defaultValue": "F1"
+            "defaultValue": "B1"
         },
         "location": {
             "type": "string",
